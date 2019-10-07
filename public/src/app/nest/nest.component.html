@@ -1,0 +1,17 @@
+
+<h1>Baked by {{displayCake.name}}</h1>
+<img src="{{displayCake.imgUrl}}" alt=""  height="100" width="100">
+<!-- <div *ngFor = "let comment of displayCake.Rates">
+    <h1>Baked by {{displayCake.comment}}</h1>
+</div> -->
+
+<span *ngFor="let rating of displayCake.Ratings">
+        <p>rating: {{rating.rate}}</p>
+        <p>comment: {{rating.comment}}</p>
+        
+</span>
+
+<p *ngIf="rating_Ave_display">The Rating Average is: {{rating_Ave_display}}</p>
+
+
+
